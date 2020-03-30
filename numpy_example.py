@@ -132,3 +132,8 @@ start_time_array = time.time()
 dot_product_array = np.dot(array1, array2)
 end_time_array = time.time()
 print('Time for array: {}'.format(end_time_array - start_time_array))
+
+##################
+## Test yourself
+##################
+# We will look at matplotlib before trying numpy out
