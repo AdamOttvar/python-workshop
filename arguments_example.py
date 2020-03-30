@@ -126,4 +126,6 @@ if __name__ == "__main__":
 ##################
 ## Test yourself
 ##################
-# Create two functions
+# Create two functions, one using *argv and one using **kwargs
+# Create a "__main__"-function like above with one flag and two input arguments.
+# If the flag is true call the **kwargs function, and if false call the *argv function.
