@@ -36,11 +36,12 @@ korsvagen_id = "9021014003980000"
 now_time = datetime.datetime.now()
 tram_date = now_time.strftime('%Y-%m-%d')
 tram_time = now_time.strftime('%H:%M')
-url = 'https://api.vasttrafik.se/bin/rest.exe/v2/departureBoard?id=' + elisedal_id
-payload = {'date': tram_date,
+url = 'https://api.vasttrafik.se/bin/rest.exe/v2/departureBoard'
+payload = {'id': elisedal_id,
+        'date': tram_date,
        'time': tram_time,
        'timeSpan': '30',
-       'maxDeparturesPerLine': '2',
+       'maxDeparturesPerLine': '3',
        'needJourneyDetail': '0',
        'direction': korsvagen_id,
        'format': 'json',}
@@ -48,3 +49,13 @@ header = {'Authorization': 'Bearer ' + token}
 # Get request
 response = requests.get(url = url, headers = header, params = payload).json()
 print(json.dumps(response, indent=2))
+
+##################
+## Test yourself
+##################
+# Create a script that prints the next 4 departures from
+# Korsvägen 9021014003980000
+# to
+# Brunnsparken 9021014001760000
+# Display their Number, Destination and in how many minutes they
+# will departure

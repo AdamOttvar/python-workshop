@@ -34,7 +34,9 @@ sorted_dict = {key: value for key, value in sorted(unsorted_dict.items(), key=la
 print(sorted_dict)
 
 
-# Try it out yourself
+##################
+## Test yourself
+##################
 # Use the given data, that is temperature in Celsius and corresponding time, 
 # convert Celsius to Fahrenheit and plot both Celsius and Fahrenheit
 # To get the data you can execute the below code. This will give you one variable
