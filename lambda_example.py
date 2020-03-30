@@ -34,7 +34,27 @@ sorted_dict = {key: value for key, value in sorted(unsorted_dict.items(), key=la
 print(sorted_dict)
 
 
-# Test yourself
-# Använda map för att ta en lista från Fahrenheit till Celsius
-# Ge en krångligare dict som ska sorteras på ett visst värde
-# Varor med olika priser som ska sorteras
+# Try it out yourself
+# Use the given data, that is temperature in Celsius and corresponding time, 
+# convert Celsius to Fahrenheit and plot both Celsius and Fahrenheit
+# To get the data you can execute the below code. This will give you one variable
+# "temp_celsius" that is a list of temperatures in Celsius and
+# "timestamp" that is a list of corresponding time for each temperature in epoch time.
+with open('temperature_data.txt', 'r') as file: 
+    for line in file: 
+        exec(line)
+
+
+# The below dictionary is the dimensions (in cm) of the boxes of some products from IKEA 
+# (width, height, length)
+# Sort the dictionary on the volume of the boxes, from biggest to smallest.
+ikea_items = {'LINNMON': (60, 3, 100), 
+              'MICKE': (76, 11, 111), 
+              'PYSSLA': (13, 13, 13), 
+              'ÄPPLARÖ': (45, 15, 109), 
+              'IVAR': (41, 10, 87),
+              'STARTTID': (33, 3, 38),
+              'LUSTIGT': (17, 6, 21),
+              'ALGOT': (4, 2, 85),
+              'HELMER': (43, 7, 76),
+              'LIXHULT': (37, 10, 38)}
