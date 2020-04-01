@@ -61,7 +61,7 @@ except Exception as e:
 # *args for variable number of arguments 
 def forth_function_w_args(*argv):
     for arg in argv:
-        print (arg)
+        print(arg)
 
 forth_function_w_args('List', 'of', 'input', 'arguments')
 
@@ -129,3 +129,7 @@ if __name__ == "__main__":
 # Create two functions, one using *argv and one using **kwargs
 # Create a "__main__"-function like above with one flag and two input arguments.
 # If the flag is true call the **kwargs function, and if false call the *argv function.
+
+# Create one function that uses all three argument types, the order of arguments
+# are (arg, *argv, **kwarg)
+# Create a "__main__"-function like the one above, that calls the function created.
