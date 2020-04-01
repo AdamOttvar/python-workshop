@@ -1,6 +1,18 @@
 # Python workshop
 Python workshop for AFRY, where we will go through some helpfull things that might be new for some and old news for some.
 
+## Content
+This is a list of what the python workshop contains. It is some popular modules and some tips and trix.
+- NumPy
+- Matplotlib
+- Generators
+- Lambda functiones
+- RegEx
+- Args, argv, kwargs, named arguments
+- Decorators
+- Data model methods
+- API-requests/JSON
+
 ## Running virtual environment
 It is not mandatory to use a virtual environment, but it is suggested in order to not screw up the systems python environment.
 
